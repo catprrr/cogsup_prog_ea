@@ -136,6 +136,9 @@ responses_mapping = {'j':'jazz','p':'pop'}
 responses = 'jjjpjjpppppjj'
 
 print("Exercise 4.7")
+for k in responses_mapping:
+    
+    
 
 pass
 

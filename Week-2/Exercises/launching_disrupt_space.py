@@ -20,12 +20,12 @@ red_square.present(clear=True, update=False)
 green_square.present(clear=False, update=True)
 
 # The red square moves and the green square moves
-for i in range(60):
-    red_square.move(offset = (375/60,0))
+for i in range(55):
+    red_square.move(offset = (350/60,0))
     red_square.present(clear=True, update=False)
     green_square.present(clear=False, update=True)
 for i in range(60):
-    green_square.move(offset=(375/60,0))
+    green_square.move(offset=(350/60,0))
     red_square.present(clear=True, update=False)
     green_square.present(clear=False, update=True)
 

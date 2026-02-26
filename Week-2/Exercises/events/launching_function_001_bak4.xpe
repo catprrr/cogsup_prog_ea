@@ -1,0 +1,17 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Thu Feb 26 2026 19:35:32
+#sha1: 0b252f
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Cats-MacBook-Air-2.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jan 19 22:00:10 PST 2026; root:xnu-11417.140.69.708.3~1/RELEASE_X86_64', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+1983,design,log,
+#design: #exp: launching
+#design: block_cnt,block_id,trial_cnt,trial_id
+1983,design,logged,
+1983,Experiment,started
+1984,Stimulus,presented,0
+2000,Stimulus,presented,1
+2001,stderr,received,'Traceback (most recent call last):'
+2002,stderr,received,'  File "/Users/catstanesby/Documents/Uni./cogsci/M1_S2/Experimental_approach/assignments/Week-2/Exercises/launching_function.py", line 23, in <module>\n    launching_function(1000,50,20)\n    ^^^^^^^^^^^^^^^^^^'
+2002,stderr,received,"NameError: name 'launching_function' is not defined"

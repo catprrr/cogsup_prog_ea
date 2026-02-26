@@ -17,6 +17,10 @@ Write a for-loop that prints out the following line 20 times:
 
 print("Exercise 2.1")
 
+shining = "All work and no play makes Jack a dull boy."
+for _ in range(20):
+    print(shining)
+
 pass
 
 print("---")
@@ -29,6 +33,10 @@ Write a for-loop that prints out the numbers from 0 up to 5 inclusive.
 """
 
 print("Exercise 2.2")
+
+for _ in range(6):
+    print(_)
+
 
 pass
 
@@ -45,6 +53,9 @@ Write a for-loop that prints out the EVEN numbers from 2 up to 8 inclusive.
 
 print("Exercise 2.3")
 
+for num in range(2, 9, 2):
+    print(num)
+
 pass
 
 print("---")
@@ -58,6 +69,9 @@ Now write another loop to print 9 through 0 (i.e., backwards).
 """
 
 print("Exercise 2.4")
+
+for num in range(9,-1,-1):
+    print(num)
 
 pass
 
@@ -81,6 +95,19 @@ Write code that prints out the following sequence:
 
 print("Exercise 2.5")
 
+for num in range(1, 9):
+    print('z' * num)
+    
+snore = ['z','z','z','z','z','z','z','z']
+numbers = [1,2,3,4,5,6,7,8]
+for snore, number in zip(snore,numbers):
+    print(snore * number)
+
+snore = 'zzzzzzzz'
+numbers = [1,2,3,4,5,6,7,8]
+for snore, number in zip(snore,numbers):
+    print(snore * number)
+
 pass
 
 print("---")
@@ -103,6 +130,10 @@ which is why the script moves automatically to a new line after the execution
 of a simple print-statement.
 ------
 """
+for num in range(1,6):
+    for num in range(1, num+1):
+        print(num, end="")
+    print()
 
 print("Exercise 2.6")
 
@@ -131,6 +162,14 @@ Hint: Before you start coding, think what set of instructions (algorithm)
 your code needs to carry out for a certain value of rows.
 ------
 """
+
+rows = int(input("How many rows? "))
+for i in range(1, rows+1):
+    spaces = rows-i
+    o_count = 2*i-1
+    print(" "*spaces + "o"*o_count)
+
+
 
 print("Exercise 2.7")
 
@@ -162,6 +201,13 @@ on how to align the numbers.
 """
 
 print("Exercise 2.8")
+
+for row in range(1,11):
+    for col in range(1, 11):
+        print('{:4d}'.format(row*col), end="")
+    print()
+
+
 
 pass
 

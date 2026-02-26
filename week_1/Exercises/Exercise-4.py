@@ -18,6 +18,8 @@ dct = {'a': 3, 'b': 7, 'c': -2, 'd': 10, 'e': 5}
 
 print("Exercise 4.1")
 
+print(sum(dct.values()))
+
 pass
 
 print("---")
@@ -31,6 +33,8 @@ Print the key that has the largest value in dct.
 """
 
 print("Exercise 4.2")
+
+print(max(dct, key=dct.get))
 
 pass
 
@@ -46,6 +50,10 @@ Create a new dictionary with the squares of all the values in dct.
 
 print("Exercise 4.3")
 
+dct_sq = {k: v**2 for k, v in dct.items()}
+print(dct_sq)
+
+
 pass
 
 print("---")
@@ -57,6 +65,10 @@ Task:
 ------
 Print only the keys in dct whose values are even numbers.
 """
+for k in dct:
+   v = dct[k]
+   if v % 2 == 0:
+        print(k)
 
 print("Exercise 4.4")
 
@@ -71,6 +83,9 @@ Task:
 ------
 Create a new dictionary that swaps the keys and values in dct.
 """
+
+tcd = {v: k for k, v in dct.items()}
+print(tcd)
 
 print("Exercise 4.5")
 
@@ -88,6 +103,18 @@ and print the resulting dictionary.
 """
 
 s = 'ccctcctttttcc'
+
+c_count = 0
+t_count = 0
+
+for ch in s:
+    if ch == 'c':
+        c_count +=1
+    if ch == 't':
+        t_count +=1
+
+letter_count = {'c': c_count, 't': t_count}
+print(letter_count)
 
 print("Exercise 4.6")
 

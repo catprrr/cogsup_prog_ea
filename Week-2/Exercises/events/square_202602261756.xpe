@@ -1,0 +1,15 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Thu Feb 26 2026 17:56:19
+#sha1: 9cefa4
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Darwin', node='Cats-MacBook-Air-2.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jan 19 22:00:10 PST 2026; root:xnu-11417.140.69.708.3~1/RELEASE_X86_64', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+12590,design,log,
+#design: #exp: square
+#design: block_cnt,block_id,trial_cnt,trial_id
+12590,design,logged,
+12590,Experiment,started
+12593,stderr,received,'Traceback (most recent call last):'
+12595,stderr,received,'  File "/Users/catstanesby/Documents/Uni./cogsci/M1_S2/Experimental_approach/assignments/Week-2/Exercises/square.py", line 21, in <module>\n    square.present(clear=True, update=False)\n    ^^^^^^'
+12595,stderr,received,"NameError: name 'square' is not defined"

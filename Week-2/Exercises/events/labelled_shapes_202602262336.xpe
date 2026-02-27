@@ -1,0 +1,10 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Thu Feb 26 2026 23:36:25
+#sha1: fba66a
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBookAir.lan', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jan 19 22:00:10 PST 2026; root:xnu-11417.140.69.708.3~1/RELEASE_X86_64', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+1198,stderr,received,'Traceback (most recent call last):'
+1199,stderr,received,'  File "/Users/catstanesby/Documents/Uni./cogsci/M1_S2/Experimental_approach/assignments/Week-2/Exercises/labelled_shapes.py", line 25, in <module>\n    start_point = (-100,math.sqrt((50^2-25^2)/2)),\n                        ~~~~~~~~~^^^^^^^^^^^^^^^'
+1199,stderr,received,'ValueError: math domain error'

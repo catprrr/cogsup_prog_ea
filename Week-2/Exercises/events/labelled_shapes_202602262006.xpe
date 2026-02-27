@@ -1,0 +1,10 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Thu Feb 26 2026 20:06:19
+#sha1: f17227
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Cats-MacBook-Air-2.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jan 19 22:00:10 PST 2026; root:xnu-11417.140.69.708.3~1/RELEASE_X86_64', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+883,stderr,received,'Traceback (most recent call last):'
+884,stderr,received,'  File "/Users/catstanesby/Documents/Uni./cogsci/M1_S2/Experimental_approach/assignments/Week-2/Exercises/labelled_shapes.py", line 25, in <module>\n    start_point = (-75,sqrt(50)),\n                       ^^^^'
+884,stderr,received,"NameError: name 'sqrt' is not defined"

@@ -2,7 +2,6 @@
 from expyriment import design, control, stimuli
 from expyriment.misc import geometry
 import math
-control.set_develop_mode()
 
 #Shape parameters
 
@@ -20,24 +19,28 @@ colours = {
     'grey':   (128, 128, 128)
 }
 
-# #position constants
+shape_names = {3: 'triangle', 4: 'square', 5: 'pentagon', 6: 'hexagon', 7: 'heptagon', 8: 'octagon', 10: 'decagon', 12: 'dodecagon'}
 
-stimulus_1 = -100,0
-stimulus_2 = 
+#postion constants
+positions = [(-100),(100)]
 
-n_stimuli = int(input("How many stimuli do you want to present? "))
+#user inputs
+
+n_stimuli = 2
 stimuli_params = []
 for i in range(n_stimuli):
     print(f"\nStimuli {i+1}:")
     n_sides = int(input("How many sides? "))
     poly_length = int(input("Side length? "))
-    poly_position = int(input("Position (x coordinate)? "))
+    radius = poly_length / (2 * math.sin(math.pi / n_sides))
+    poly_position = positions[i]
     colour_name = input("Enter colour (white/black/red/green/blue/yellow/purple/orange/pink/cyan/grey): ")
     poly_colour = colours[colour_name]
-    label_text = input(("Enter the text for the label: "))
+    label_text = shape_names.get(n_sides, 'polygon')
     stimuli_params.append((n_sides, poly_length, poly_colour, poly_position, label_text))
 
 # Create an object of class Experiment: This stores the global settings of your experiment & handles the data file, screen, and input devices
+control.set_develop_mode()
 exp = design.Experiment(name = "labelled_shape")
 
 # Initialize the experiment: Must be done before presenting any stimulus
@@ -47,12 +50,12 @@ control.initialize(exp)
 
 def polygon_fun(n_sides, poly_length, poly_colour, poly_position, label_text, clear=False) :
     vertices = geometry.vertices_regular_polygon(n_sides, poly_length)
-    top_y = max(v[1] for v in vertices)
-
+    top_y = radius
+    print(f"n_sides={n_sides}, poly_length={poly_length}, top_y={top_y}")
     polygon = stimuli.Shape(
         vertex_list = vertices,
-        colour=(poly_colour),
-        position =(poly_position, 0))
+        colour=poly_colour,
+        position = (poly_position, 0))
     
     poly_line = stimuli.Line(
         start_point = (poly_position,top_y),

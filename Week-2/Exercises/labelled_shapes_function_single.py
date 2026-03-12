@@ -20,22 +20,15 @@ colours = {
     'grey':   (128, 128, 128)
 }
 
-# #position constants
 
-stimulus_1 = -100,0
-stimulus_2 = 
 
-n_stimuli = int(input("How many stimuli do you want to present? "))
-stimuli_params = []
-for i in range(n_stimuli):
-    print(f"\nStimuli {i+1}:")
-    n_sides = int(input("How many sides? "))
-    poly_length = int(input("Side length? "))
-    poly_position = int(input("Position (x coordinate)? "))
-    colour_name = input("Enter colour (white/black/red/green/blue/yellow/purple/orange/pink/cyan/grey): ")
-    poly_colour = colours[colour_name]
-    label_text = input(("Enter the text for the label: "))
-    stimuli_params.append((n_sides, poly_length, poly_colour, poly_position, label_text))
+n_sides = int(input("How many sides? "))
+poly_length = int(input("Side length? "))
+poly_position = int(input("Position (x coordinate)? "))
+colour_name = input("Enter colour (white/black/red/green/blue/yellow/purple/orange/pink/cyan/grey): ")
+poly_colour = colours[colour_name]
+label_text = input(("Enter the text for the label: "))
+    
 
 # Create an object of class Experiment: This stores the global settings of your experiment & handles the data file, screen, and input devices
 exp = design.Experiment(name = "labelled_shape")
@@ -45,9 +38,12 @@ control.initialize(exp)
 
 #Define the functions
 
-def polygon_fun(n_sides, poly_length, poly_colour, poly_position, label_text, clear=False) :
+def polygon_fun(n_sides, poly_length, poly_colour, poly_position) :
     vertices = geometry.vertices_regular_polygon(n_sides, poly_length)
     top_y = max(v[1] for v in vertices)
+    print(f"vertices: {vertices}")
+    print(f"top_y: {top_y}")
+    print(f"line start: {(poly_position, top_y)}")
 
     polygon = stimuli.Shape(
         vertex_list = vertices,
@@ -65,19 +61,15 @@ def polygon_fun(n_sides, poly_length, poly_colour, poly_position, label_text, cl
     text_size = 15,
     text_colour = (255, 255, 255))
 
-    polygon.present(clear=clear, update=False)
+    polygon.present(clear=True, update=False)
     poly_line.present(clear=False, update=False)
-    poly_text.present(clear=False, update=False)
+    poly_text.present(clear=False, update=True)
 
 # Start running the experiment
 control.start(subject_id=1)
 
 #launch function
-for i, params in enumerate(stimuli_params):
-    clear = (i==0)
-    polygon_fun(*params, clear = clear)
-
-exp.screen.update()
+polygon_fun(n_sides, poly_length, poly_colour, poly_position)
 
 # Leave it on-screen until a key is pressed
 exp.keyboard.wait()

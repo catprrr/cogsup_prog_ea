@@ -1,0 +1,16 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Fri Feb 27 2026 11:50:24
+#sha1: ecf482
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Cats-MacBook-Air-2.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jan 19 22:00:10 PST 2026; root:xnu-11417.140.69.708.3~1/RELEASE_X86_64', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+1872,design,log,
+#design: #exp: labelled_shape
+#design: block_cnt,block_id,trial_cnt,trial_id
+1872,design,logged,
+1872,Experiment,started
+1873,stderr,received,'Traceback (most recent call last):'
+1874,stderr,received,'  File "/Users/catstanesby/Documents/Uni./cogsci/M1_S2/Experimental_approach/assignments/Week-2/Exercises/labelled_shapes_function_single.py", line 72, in <module>\n    polygon_fun(n_sides, poly_length, poly_colour, poly_position)\n    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1874,stderr,received,'  File "/Users/catstanesby/Documents/Uni./cogsci/M1_S2/Experimental_approach/assignments/Week-2/Exercises/labelled_shapes_function_single.py", line 42, in polygon_fun\n    vertices = geometry.vertices_regular_polygon(n_sides, poly_length, 90)'
+1874,stderr,received,'TypeError: vertices_regular_polygon() takes 2 positional arguments but 3 were given'

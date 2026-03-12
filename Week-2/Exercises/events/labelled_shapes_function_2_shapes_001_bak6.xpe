@@ -1,20 +1,22 @@
 #Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
-#date: Thu Mar 12 2026 14:48:37
-#sha1: 575da3
+#date: Thu Mar 12 2026 16:20:57
+#sha1: ffe2fb
 #modules: 
 #display: size=(800, 600), window_mode=True, opengl=2
 #os: uname_result(system='Darwin', node='MacBookAir.lan', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jan 19 22:00:10 PST 2026; root:xnu-11417.140.69.708.3~1/RELEASE_X86_64', machine='x86_64')
 Time,Type,Event,Value,Detail,Detail2
-3267,design,log,
+2462,design,log,
 #design: #exp: labelled_shape
 #design: block_cnt,block_id,trial_cnt,trial_id
-3267,design,logged,
-3267,Experiment,started
-3269,Stimulus,presented,0
-3271,Stimulus,presented,1
-3273,Stimulus,presented,2
-3275,Stimulus,presented,4
-3275,Stimulus,presented,5
-3276,Stimulus,presented,6
-5378,Keyboard,received,32,wait
-5379,Experiment,ended
+2462,design,logged,
+2462,Experiment,started
+2462,stdout,received,'n_sides=3, poly_length=50, top_y=43'
+2465,Stimulus,presented,0
+2466,Stimulus,presented,1
+2468,Stimulus,presented,2
+2469,stdout,received,'n_sides=6, poly_length=25, top_y=21'
+2470,Stimulus,presented,4
+2471,Stimulus,presented,5
+2472,Stimulus,presented,6
+6944,Keyboard,received,32,wait
+6944,Experiment,ended

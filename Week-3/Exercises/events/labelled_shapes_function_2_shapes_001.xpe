@@ -1,0 +1,22 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Thu Mar 26 2026 10:09:07
+#sha1: 05200c
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBookAir.lan', release='24.6.0', version='Darwin Kernel Version 24.6.0: Fri Feb 27 19:33:24 PST 2026; root:xnu-11417.140.69.709.8~1/RELEASE_X86_64', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+2046,design,log,
+#design: #exp: labelled_shape
+#design: block_cnt,block_id,trial_cnt,trial_id
+2047,design,logged,
+2047,Experiment,started
+2050,stdout,received,'n_sides=4, poly_length=50, top_y=40.333385241843516'
+2058,Stimulus,presented,0
+2070,Stimulus,presented,1
+2073,Stimulus,presented,2
+2075,stdout,received,'n_sides=7, poly_length=35, top_y=40.333385241843516'
+2077,Stimulus,presented,4
+2079,Stimulus,presented,5
+2081,Stimulus,presented,6
+16648,Keyboard,received,32,wait
+16648,Experiment,ended

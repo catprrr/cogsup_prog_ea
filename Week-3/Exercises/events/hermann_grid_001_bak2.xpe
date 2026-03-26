@@ -1,0 +1,15 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Thu Mar 26 2026 14:23:02
+#sha1: 2efad9
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Host-008.lan', release='24.6.0', version='Darwin Kernel Version 24.6.0: Fri Feb 27 19:33:24 PST 2026; root:xnu-11417.140.69.709.8~1/RELEASE_X86_64', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+3386,design,log,
+#design: #exp: herman_grid
+#design: block_cnt,block_id,trial_cnt,trial_id
+3386,design,logged,
+3386,Experiment,started
+3406,Stimulus,presented,0
+15900,Keyboard,received,32,wait
+15900,Experiment,ended

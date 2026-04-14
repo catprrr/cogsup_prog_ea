@@ -1,0 +1,12 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Thu Mar 26 2026 19:42:51
+#sha1: f1e564
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Cats-MacBook-Air-2.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Fri Feb 27 19:33:24 PST 2026; root:xnu-11417.140.69.709.8~1/RELEASE_X86_64', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+1129,Stimulus,presented,0
+2487,Keyboard,received,104,wait
+2488,stderr,received,'Traceback (most recent call last):'
+2488,stderr,received,'  File "/Users/catstanesby/Documents/Uni./cogsci/M1_S2/Experimental_approach/assignments/Week-5/Exercises/keyboard_test.py", line 17, in <module>\n    feedback = stimuli.TextLine("you pressed " + key)\n                                ~~~~~~~~~~~~~~~^~~~~'
+2488,stderr,received,'TypeError: can only concatenate str (not "tuple") to str'

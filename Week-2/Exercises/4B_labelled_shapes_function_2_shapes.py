@@ -32,7 +32,7 @@ for i in range(n_stimuli):
     print(f"\nStimuli {i+1}:")
     n_sides = int(input("How many sides? "))
     poly_length = int(input("Side length? "))
-    radius = poly_length / (2 * math.sin(math.pi / n_sides))
+    radius = poly_length / (2 * math.sin(math.pi / n_sides)) #I think this might only work for hexagons and triangles - need to write a formula that means side length is defined by the first choice
     poly_position = positions[i]
     colour_name = input("Enter colour (white/black/red/green/blue/yellow/purple/orange/pink/cyan/grey): ")
     poly_colour = colours[colour_name]

@@ -1,0 +1,13 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Thu Mar 26 2026 19:44:47
+#sha1: 231ffe
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Cats-MacBook-Air-2.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Fri Feb 27 19:33:24 PST 2026; root:xnu-11417.140.69.709.8~1/RELEASE_X86_64', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+1072,Stimulus,presented,0
+2276,Keyboard,received,121,wait
+2291,Stimulus,presented,1
+5291,stdout,received,'(121, 1203)'
+5291,Experiment,ended
+5310,Stimulus,presented,2

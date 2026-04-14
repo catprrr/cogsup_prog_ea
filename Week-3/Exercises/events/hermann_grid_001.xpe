@@ -5,3 +5,11 @@
 #display: size=(800, 600), window_mode=True, opengl=2
 #os: uname_result(system='Darwin', node='Host-008.lan', release='24.6.0', version='Darwin Kernel Version 24.6.0: Fri Feb 27 19:33:24 PST 2026; root:xnu-11417.140.69.709.8~1/RELEASE_X86_64', machine='x86_64')
 Time,Type,Event,Value,Detail,Detail2
+2353,design,log,
+#design: #exp: herman_grid
+#design: block_cnt,block_id,trial_cnt,trial_id
+2353,design,logged,
+2353,Experiment,started
+2360,Stimulus,presented,0
+9363689,Keyboard,received,32,wait
+9363690,Experiment,ended

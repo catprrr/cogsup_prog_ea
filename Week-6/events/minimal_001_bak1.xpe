@@ -1,0 +1,17 @@
+#Expyriment 1.0.0 (Python 3.13.9), .xpe-file, coding: UTF-8
+#date: Thu Apr 09 2026 19:26:27
+#sha1: d324c9
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Air.local', release='25.4.0', version='Darwin Kernel Version 25.4.0: Thu Mar 19 19:33:43 PDT 2026; root:xnu-12377.101.15~1/RELEASE_ARM64_T8142', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+2676,design,log,
+#design: #exp: Square+Circle
+#design: block_cnt,block_id,trial_cnt,trial_id
+2676,design,logged,
+2676,Experiment,started
+2676,Stimulus,presented,0
+2679,Stimulus,presented,1
+5179,stderr,received,'Traceback (most recent call last):'
+5179,stderr,received,'  File "/Users/catstanesby/Documents/Uni./cogsci/M1_S2/Experimental_approach/assignments/Week-6/minimal.py", line 38, in <module>\n    exp.data.ad([rt]) #add a row of data with RT\n    ^^^^^^^^^^^'
+5179,stderr,received,"AttributeError: 'DataFile' object has no attribute 'ad'. Did you mean: 'add'?"
